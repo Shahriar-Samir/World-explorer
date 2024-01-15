@@ -1,0 +1,272 @@
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap');
+
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* body styling starts here*/
+body{
+    background: #FFF;
+}
+/* body styling ends here*/
+
+
+/* styling for large devices starts here */
+
+/* header part styling starts here*/
+
+.header{
+    width: 90%;
+    max-width: 1170px;
+    margin: auto;
+}
+
+/* navbar section styling starts here */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.25em;
+}
+
+.navbar-title{
+    display: flex;
+    gap: 1em;
+}
+
+.world-explorer{
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.explorer{
+    color: #FF5400;
+}
+
+.navbar> ul{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     list-style: none;
+     gap: 2.75em;
+}
+
+.navbar> ul li a{
+    color: #424247;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.navbar .home-link{
+    color: #FF5400;
+}
+/* navbar section styling ends here */
+
+/* banner section styling starts here */
+.banner{
+    margin-top: 3.12em;
+    height: 500px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%) , url('../Images/Group 13 (1) (1).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    gap: 2em;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.banner-details{
+    font-size: 1rem;
+    font-weight: 400;
+    width: 676px;
+    text-align: center;
+}
+
+.find-input-fields{
+    background: rgba(255, 255, 255, 0.30);
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+.input{
+    width: 174px;
+    height: 52px;
+    border: 0;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    padding: 1em;
+    font-size: 1rem;
+}
+
+.find-now-button{
+    background: #FF5400;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1rem;
+}
+
+/* banner section styling ends here */
+
+/* header part styling ends here*/
+
+/* main part styling starts here */
+.main{
+    width: 90%;
+    max-width: 1170px;
+    margin: auto;
+    margin-top: 6.25em;
+    
+}
+
+/* popular posts section starts here */
+.popular-tours{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 550px;
+    gap: 3.31em;
+}
+
+.popular-tours-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.popular-tours-title{
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.popular-tours-details1{
+    color: #5A5A5D;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.popular-tours-details2{
+    padding-left: 1.25em;
+    color: #5A5A5D;
+    font-weight: 400;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.popular-tours-details3{
+    color: #5A5A5D;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.read-more-button{
+    border: 0;
+    color: #FFF;
+    border-radius: 0.8em;
+    background: #FF5400;
+    width: 174px;
+    height: 52px;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+/* popular posts section ends here */
+
+.destinations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+.destinations-places{
+    height: 900px;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "maldives maldives maldives maldives maldives indonesia indonesia indonesia indonesia indonesia"
+    "srilanka srilanka srilanka north-america north-america north-america north-america north-america kashmir kashmir"
+    "bangladesh bangladesh bangladesh bangladesh bandarban bandarban bandarban bandarban bandarban bandarban";
+    gap: 1em;
+}
+
+.maldives{
+    background: url('../Images/Rectangle 5.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1em;
+    grid-area: maldives;
+
+}
+.indonesia{
+    background: url('../Images/Rectangle 8.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1em;
+    grid-area: indonesia;
+}
+.srilanka{
+    background: url('../Images/Rectangle 6.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1em;
+    grid-area: srilanka;
+}
+.north-america{
+    background: url('../Images/Rectangle 7.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1em;
+    grid-area: north-america;
+}
+.kashmir{
+    background: url('../Images/Rectangle 9.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1em;
+    grid-area: kashmir;
+}
+.bangladesh{
+    background: url('../Images/Rectangle 11.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1em;
+    grid-area: bangladesh;
+}
+.bandarban{
+    background: url('../Images/Rectangle 10.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1em;
+    grid-area: bandarban;
+}
+
+
+
+
+/* main part styling ends here */
+
+
+/* styling for large devices ends here */
