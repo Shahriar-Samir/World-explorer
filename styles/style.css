@@ -115,7 +115,6 @@ body{
     width: 174px;
     height: 52px;
     border: 0;
-    border-radius: 0.5em;
     box-sizing: border-box;
     padding: 1em;
     font-size: 1rem;
@@ -129,6 +128,10 @@ body{
     align-items: center;
     gap: 0.5em;
     font-size: 1rem;
+    cursor: pointer;
+}
+.find-now-button:hover{
+    background: #a86645;
 }
 
 /* banner section styling ends here */
@@ -219,6 +222,11 @@ body{
     height: 52px;
     font-size: 1.25rem;
     font-weight: 800;
+    cursor: pointer;
+}
+.winter-offer-button:hover{
+        background: #a86645;
+
 }
 /* winter offer section styling ends here*/
 
@@ -276,10 +284,12 @@ body{
 
 .popular-tours-image{
     width: 100%;
+    height: 100%;
 }
 
 .popular-tours-image img{
     width: 100%;
+    height: 100%;
 }
 
 .read-more-button{
@@ -291,6 +301,12 @@ body{
     box-sizing: border-box;
     font-size: 1.25rem;
     font-weight: 800;
+    cursor: pointer;
+}
+.read-more-button:hover{
+
+        background: #a86645;
+
 }
 /* popular posts section ends here */
 
@@ -346,6 +362,12 @@ body{
     font-size: 1.75rem;
     font-weight: 800;
     color: #FFF;
+    outline: 2px solid transparent;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.place:hover{
+    border: 2px solid rgb(154, 34, 34);
 }
 
 .maldives{
@@ -600,6 +622,10 @@ body{
     font-size: 1.25rem;
     font-weight: 800;
     margin-top: 1.5em;
+    cursor: pointer;
+}
+.book-now:hover{
+    background-color: #a86645;
 }
 
 .deals-packages{
@@ -617,6 +643,10 @@ body{
     font-style: normal;
     font-weight: 800;
     margin-top: 3.875em;
+    cursor: pointer;
+}
+.deals-packages:hover{
+   background-color: #a86645;
 }
 /* deals-discount section styling ends here*/
 
@@ -674,25 +704,24 @@ body{
     color: #FFF;
     font-size: 1.25em;
     font-weight: 800;
+    cursor: pointer;
+}
+.see-more:hover{
+   background-color: #a86645;
 }
 
 .simple-place-video-container{
     height: 100%;
     width: 100%;
-    position: relative;
 }
 
 .simple-place-video{
-    width: 100%;
+     width: 100%;
      height: 100%;
      border-radius: 1em;
 }
 
 .simple-place-video-title{
-    position: absolute;
-    top: 42.5%;
-    left:27.5%;
-    margin: auto;
     font-size: 1.5rem;
     width: 276px;
     text-align: center;
@@ -706,14 +735,15 @@ body{
 /* newsletter section styling starts here */
 .newsletter{
     margin-top: 6.25em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 422px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    height: 500px;
     gap: 1.5em;
 }
 
 .newsletter-form{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -769,6 +799,10 @@ body{
     color: #FFF;
     font-size: 1.25rem;
     font-weight: 800;
+    cursor: pointer;
+}
+.newsletter-form input[type='submit']:hover{
+    background-color: #a86645;
 }
 
 .newsletter-image-container{
@@ -915,13 +949,16 @@ body{
             text-align: start;
         }
         .popular-tours-image{
-
+                
         }
         .destinations-texts{
             
         }
         .destinations{
          margin-top: 2em;
+        }
+        .destinations-title{
+            font-size: 1.5rem;
         }
         .destinations-places{
             grid-template-areas: "maldives"
@@ -959,6 +996,9 @@ body{
             grid-row: 3/3;
             grid-column: 1/2;
         }
+        .deals-discounts{
+            margin-top: 2em;
+        }
         .deals-discounts-title{
             font-size: 1.5rem;
             text-align: center;
@@ -985,9 +1025,6 @@ body{
             width: 90%;
             padding: 2em;
         }
-        .deals-discounts-details{
-            
-        }
         .simple-place{
             flex-direction: column;
         }
@@ -1000,20 +1037,30 @@ body{
         .simple-place-list{
             margin-top: 1em;
         }
-        .see-more{
-            margin-top: 1em;
-        }
-        .newsletter{
-            flex-direction: column;
-            margin-top: 25em;
-        }
         .simple-place-video-title{
             position: static;
             justify-self: center;
             align-self: center;
           
         }
+        .see-more{
+            margin-top: 1em;
+        }
+        .newsletter{
+            grid-template-columns: 100%;
+            margin-top: 25em;
+        }
+        .newsletter-form{
+            width: 100%;
+            height: 500px;
+            
+        }
+        .newsletter-image-container{
+            margin-top: 2em;
+            height: 500px;
+        }
+
         .footer{
-            margin-top: 20em;
+            margin-top: 40em;
         }
 }
