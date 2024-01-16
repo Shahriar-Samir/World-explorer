@@ -35,6 +35,7 @@ body{
 
 .navbar-title{
     display: flex;
+    align-items: center;
     gap: 1em;
 }
 
@@ -66,6 +67,11 @@ body{
 .navbar .home-link{
     color: #FF5400;
 }
+
+.bars{
+    display: none;
+}
+
 /* navbar section styling ends here */
 
 /* banner section styling starts here */
@@ -87,13 +93,14 @@ body{
 
 .banner-title{
     font-size: 4rem;
+    text-align: center;
     font-weight: 800;
 }
 
 .banner-details{
     font-size: 1rem;
     font-weight: 400;
-    width: 676px;
+    width: 80%;
     text-align: center;
 }
 
@@ -144,10 +151,12 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2em;
 }
 
 .winter-offer-texts{
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,7 +166,7 @@ body{
 
 .winter-offer-title{
     width: 100%;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
     text-align: center;
     color: #131318;
@@ -167,19 +176,15 @@ body{
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
     width: 100%;
-    max-width: 300px;
-    font-size: 1rem;
+    max-width: 500px;
+    font-size: 1.2rem;
     font-weight: 400;
-    margin-top: 1em;
     line-height: 1.5;
 }
 
-.winter-offer-image{
-    margin-top: 2em;
-}
 
 .winter-offer-image{
-    width: 50%;
+    width: 100%;
     height: 100%;
     background: linear-gradient(90deg , rgba(27, 43, 97, 0.811) ,rgba(128, 128, 128, 0.584)),url('../Images/winter.jpg');
     background-repeat: no-repeat;
@@ -233,12 +238,16 @@ body{
     align-items: flex-start;
     justify-content: space-between;
     height: 100%;
+    width: 100%;
+    gap: 2em;
 }
 
 .popular-tours-title{
     color: #131318;
     font-size: 2.5rem;
     font-weight: 800;
+    width: 100%;
+    text-align: center;
 }
 
 .popular-tours-details1{
@@ -262,11 +271,15 @@ body{
     color: #5A5A5D;
     font-weight: 400;
     font-size: 1rem;
-    width: 55%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
- 
+    width: 100%;
+}
+
+.popular-tours-image{
+    width: 100%;
+}
+
+.popular-tours-image img{
+    width: 100%;
 }
 
 .read-more-button{
@@ -274,8 +287,8 @@ body{
     color: #FFF;
     border-radius: 0.8em;
     background: #FF5400;
-    width: 174px;
-    height: 52px;
+    padding: 1em 1em;
+    box-sizing: border-box;
     font-size: 1.25rem;
     font-weight: 800;
 }
@@ -303,13 +316,16 @@ body{
     color: #131318;
     font-weight: 800;
     font-size: 2.5rem;
+    width: 100%;
 }
 .destinations-details{
     text-align: center;
-    width: 643px;
+    width: 100%;
+    max-width: 643px;
     color: rgba(19, 19, 24, 0.70);
     font-weight: 400;
     font-size: 1rem;
+
 }
 
 .destinations-places{
@@ -411,7 +427,8 @@ body{
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
-    width: 643px;
+    width: 90%;
+    max-width: 643px;
     
 }
 
@@ -492,10 +509,12 @@ body{
     color: #131318;
     font-size: 2.5rem;
     font-weight: 800;
+    width: 100%;
 }
 
 .deals-discounts-details{
-    width: 643px;
+    width: 100%;
+    max-width: 643px;
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
     font-size: 1rem;
@@ -527,7 +546,8 @@ body{
 .deal-container-texts{
     width: 90%;
     max-width: 579px;
-    height: 389px;
+    height: 100%;
+    max-height: 389px;
     border-radius: 1em;
     border: 0.1em solid #FFF;
     background: rgba(255, 255, 255, 0.80);
@@ -602,6 +622,7 @@ body{
 
 /* simple-place section styling starts here */
 .simple-place{
+     width: 100%;
      margin-top: 6.25em;
      display: flex;
      justify-content: space-between;
@@ -657,10 +678,12 @@ body{
 
 .simple-place-video-container{
     height: 100%;
+    width: 100%;
     position: relative;
 }
 
 .simple-place-video{
+    width: 100%;
      height: 100%;
      border-radius: 1em;
 }
@@ -684,15 +707,13 @@ body{
 .newsletter{
     margin-top: 6.25em;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 422px;
     gap: 1.5em;
 }
 
 .newsletter-form{
-    flex: 1;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -751,13 +772,16 @@ body{
 }
 
 .newsletter-image-container{
-    flex: 1.75;
     height: 100%;
+    max-height: 500px;
+    width: 100%;
     background: url('../Images/Rectangle 8 (1).png') no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 1em;
-    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .newsletter-discount-container{
@@ -770,9 +794,8 @@ body{
     justify-content: center;
     align-items: center;
     transform: rotate(-20deg);
-    position: absolute;
-    right: 10px;
-    bottom: 50px;
+    margin-bottom: 3em;
+    margin-right: 0.5em;
 }
 
 .newsletter-link{
@@ -822,7 +845,8 @@ body{
     font-size: 1rem;
     color: #5A5A5D;
     font-weight: 400;
-    width: 769px;
+    width: 70%;
+    max-width: 769px;
     text-align: center;
 }
 
@@ -838,3 +862,158 @@ body{
 /* footer part styling ends here */
 
 /* styling for large devices ends here */
+
+/* styling for small devices starts here */
+
+@media screen and (max-width:600px) {
+        .world-explorer{
+            font-size: 1.5rem;
+        }
+        .navbar>ul{
+            display: none;
+        }
+        .bars{
+            display:block;
+            font-size: 1.5rem;
+        }
+        .banner{
+            gap: 1em;
+        }
+        .banner-title{
+            font-size: 1.5rem;
+        }
+        .find-input-fields{
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+        }
+        .input{
+            width: 100%;
+        }
+
+        .winter-offer{
+            flex-direction: column;
+            gap: 1em;
+        }
+        .winter-offer-image{
+            box-sizing: border-box;
+            padding: 3em;
+        }
+        .winter-offer-title{
+            margin-top: 1em;
+            font-size: 1.5rem;
+            text-align: start;
+        }
+        .popular-tours{
+            flex-direction: column;
+            margin-top: 15em;
+            gap: 2em;
+            height: 100%;
+        }
+        .popular-tours-title{
+            font-size: 1.5rem;
+            text-align: start;
+        }
+        .popular-tours-image{
+
+        }
+        .destinations-texts{
+            
+        }
+        .destinations{
+         margin-top: 2em;
+        }
+        .destinations-places{
+            grid-template-areas: "maldives"
+            "indonesia"
+            "srilanka"
+            "north-america"
+            "kashmir"
+            "bangladesh"
+            "bandarban"
+            ;
+        }
+        .place{
+            height: 176px;
+            border-radius: 0.5em;
+        }
+        .choose-us{
+            margin-top: 30em;
+        }
+        .choose-us-title{
+            font-size: 1.5rem;
+        }
+        .choose-us-services{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3,1fr);
+        }
+        .service:nth-child(1){
+            grid-row: 1/1;
+            grid-column: 1/2;
+        }
+        .service:nth-child(2){
+            grid-row: 2/2;
+            grid-column: 1/2; 
+        }
+        .service:nth-child(3){
+            grid-row: 3/3;
+            grid-column: 1/2;
+        }
+        .deals-discounts-title{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .deals-discounts-container{
+            justify-content: center;
+        }
+        .deal-container{
+            padding: 0;
+            justify-content: center;
+        }
+        .deal-container:nth-child(2){
+            padding: 0;
+            justify-content: center;
+        }
+        .deals-data{
+            flex-wrap: wrap;
+            gap: 0.5em;
+        }
+        .deals-discounts-title{
+            margin: 0;
+        }
+        .deal-container-texts{
+            width: 90%;
+            padding: 2em;
+        }
+        .deals-discounts-details{
+            
+        }
+        .simple-place{
+            flex-direction: column;
+        }
+        .simple-place-title{
+            font-size: 1.5rem;
+        }
+        .simple-place-details{
+            margin-top: 1em;
+        }
+        .simple-place-list{
+            margin-top: 1em;
+        }
+        .see-more{
+            margin-top: 1em;
+        }
+        .newsletter{
+            flex-direction: column;
+            margin-top: 25em;
+        }
+        .simple-place-video-title{
+            position: static;
+            justify-self: center;
+            align-self: center;
+          
+        }
+        .footer{
+            margin-top: 20em;
+        }
+}
