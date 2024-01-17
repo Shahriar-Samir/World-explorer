@@ -64,6 +64,10 @@ body{
     font-weight: 400;
 }
 
+.navbar> ul li a:hover{
+    text-decoration:underline;
+}
+
 .navbar .home-link{
     color: #FF5400;
 }
@@ -129,9 +133,14 @@ body{
     gap: 0.5em;
     font-size: 1rem;
     cursor: pointer;
+    transition: all 0.2s ease-in;
+    border-radius: 0.5em;
+    border: 2px solid transparent;
+    box-sizing: border-box;
 }
 .find-now-button:hover{
-    background: #a86645;
+    background-color: #a53801;
+    border: white 2px solid;
 }
 
 /* banner section styling ends here */
@@ -223,10 +232,10 @@ body{
     font-size: 1.25rem;
     font-weight: 800;
     cursor: pointer;
+    transition: all 0.2s ease-in;
 }
 .winter-offer-button:hover{
-        background: #a86645;
-
+    background-color: #a53801;
 }
 /* winter offer section styling ends here*/
 
@@ -302,11 +311,11 @@ body{
     font-size: 1.25rem;
     font-weight: 800;
     cursor: pointer;
+    transition: all 0.2s ease-in;
+
 }
 .read-more-button:hover{
-
-        background: #a86645;
-
+    background-color: #a53801;
 }
 /* popular posts section ends here */
 
@@ -363,11 +372,11 @@ body{
     font-weight: 800;
     color: #FFF;
     outline: 2px solid transparent;
-    border: 2px solid transparent;
     cursor: pointer;
+    transition: all 0.2s ease-in;
 }
 .place:hover{
-    border: 2px solid rgb(185, 114, 7);
+    outline: #FF5400 3px solid;
 }
 
 .maldives{
@@ -532,6 +541,7 @@ body{
     font-size: 2.5rem;
     font-weight: 800;
     width: 100%;
+    text-align: center;
 }
 
 .deals-discounts-details{
@@ -547,7 +557,7 @@ body{
     margin-top: 3em;
 }
 
-.deal-container{
+.deals-container{
     background: url('../Images/Group 39.png') no-repeat;
     height: 500px;
     background-size: cover;
@@ -560,12 +570,12 @@ body{
     padding: 3.5em;
 }
 
-.deal-container:nth-child(2){
+.deals-container:nth-child(2){
     background: url('../Images/Group 40.png') no-repeat;
     justify-content: flex-start;
 }
 
-.deal-container-texts{
+.deals-container-texts{
     width: 90%;
     max-width: 579px;
     height: 100%;
@@ -575,6 +585,9 @@ body{
     background: rgba(255, 255, 255, 0.80);
     padding: 3.125em;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .deals-data{
@@ -595,21 +608,18 @@ body{
     color: #131318;    
     font-size: 1.5rem;
     font-weight: 800;
-    margin-top: 1.625em;
 }
 
 .deals-details{
     color: #5A5A5D;
     font-size: 1rem;
     font-weight: 400;
-    margin-top: 1em;
 }
 
 .deals-price{
     color: #FF5400;
     font-size: 1.25rem;
     font-weight: 800;
-    margin-top: 1em;
 }
 
 .book-now{
@@ -621,11 +631,11 @@ body{
     color: #FFF;
     font-size: 1.25rem;
     font-weight: 800;
-    margin-top: 1.5em;
     cursor: pointer;
+    transition: all 0.2s ease-in;
 }
 .book-now:hover{
-    background-color: #a86645;
+    background-color: #a53801;
 }
 
 .deals-packages{
@@ -644,9 +654,10 @@ body{
     font-weight: 800;
     margin-top: 3.875em;
     cursor: pointer;
+    transition: all 0.2s ease-in;
 }
 .deals-packages:hover{
-   background-color: #a86645;
+   background-color: #a53801;
 }
 /* deals-discount section styling ends here*/
 
@@ -703,9 +714,10 @@ body{
     font-size: 1.25em;
     font-weight: 800;
     cursor: pointer;
+    transition: all ease-in 0.2s;
 }
 .see-more:hover{
-   background-color: #a86645;
+   background-color: #a53801;
 }
 
 .simple-place-video-container{
@@ -798,9 +810,10 @@ body{
     font-size: 1.25rem;
     font-weight: 800;
     cursor: pointer;
+    transition: all ease-in 0.2s;
 }
 .newsletter-form input[type='submit']:hover{
-    background-color: #a86645;
+    background-color: #a53801;
 }
 
 .newsletter-image-container{
@@ -894,9 +907,12 @@ body{
 
 /* styling for large devices ends here */
 
+
+
 /* styling for small devices starts here */
 
 @media screen and (max-width:600px) {
+    /* navbar styling starts here */
         .world-explorer{
             font-size: 1.5rem;
         }
@@ -907,11 +923,15 @@ body{
             display:block;
             font-size: 1.5rem;
         }
+    /* navbar styling ends here */
+
+    /* banner section styling starts here*/
         .banner{
             gap: 1em;
         }
         .banner-title{
             font-size: 1.5rem;
+            width: 90%;
         }
         .find-input-fields{
             flex-direction: column;
@@ -921,7 +941,9 @@ body{
         .input{
             width: 100%;
         }
+    /* banner section styling ends here*/
 
+    /* winter-offer section styling starts here*/
         .winter-offer{
             height: auto;
             flex-direction: column;
@@ -936,10 +958,13 @@ body{
             font-size: 1.5rem;
             text-align: start;
         }
+    /* winter-offer section styling ends here*/
+
+    /* popular-tours section styling starts here*/
         .popular-tours{
             height: auto;
             flex-direction: column;
-            margin-top: 2em;
+            margin-top: 3em;
             gap: 2em;
         
         }
@@ -947,10 +972,9 @@ body{
             font-size: 1.5rem;
             text-align: start;
         }
-        .popular-tours-image{
-                
-        }
-
+    /* popular-tours section styling ends here*/
+      
+    /* destinations section styling starts here*/
         .destinations{
          margin-top: 2em;
         }
@@ -972,6 +996,9 @@ body{
             height: 176px;
             border-radius: 0.5em;
         }
+    /* destinations section styling ends here */
+        
+    /* choose us section styling starts here */
         .choose-us{
             margin-top: 2em;
         }
@@ -997,6 +1024,9 @@ body{
         .deals-discounts{
             margin-top: 2em;
         }
+    /* choose us section styling ends here */
+
+    /* deals discounts section styling starts here*/
         .deals-discounts-title{
             font-size: 1.5rem;
             text-align: center;
@@ -1004,11 +1034,11 @@ body{
         .deals-discounts-container{
             justify-content: center;
         }
-        .deal-container{
+        .deals-container{
             padding: 0;
             justify-content: center;
         }
-        .deal-container:nth-child(2){
+        .deals-container:nth-child(2){
             padding: 0;
             justify-content: center;
         }
@@ -1019,30 +1049,30 @@ body{
         .deals-discounts-title{
             margin: 0;
         }
-        .deal-container-texts{
+        .deals-container-texts{
             width: 90%;
             padding: 2em;
         }
         .deals-packages{
             margin-top: 2em;
         }
+    /* deals discounts section styling ends here*/
 
+    
+    /* simple section styling starts here*/
+        .simple-place-texts{
+            gap: 1em;
+        }
         .simple-place{
-            margin-top: 2em;
+            margin-top: 3em;
             flex-direction: column;
         }
         .simple-place-title{
             font-size: 1.5rem;
         }
-        .simple-place-details{
-            margin-top: 1em;
-        }
-        .simple-place-list{
-            margin-top: 1em;
-        }
-        .see-more{
-            margin-top: 1em;
-        }
+    /* simple section styling ends here*/
+
+    /* newsletter section styling starts here*/
         .newsletter{
             grid-template-columns: 100%;
             margin-top: 2em;
@@ -1061,9 +1091,181 @@ body{
         .newsletter-discount{
             font-size: 1.5rem;
         }
+    /* newsletter section styling ends here*/
+
+    /* footer part styling starts here*/
         .footer{
             margin-top: 2em;
             height: 300px;
             gap: 1em;
         }
+    /* footer part styling starts here*/
 }
+
+/* styling for small devices ends here*/
+
+/* styling for medium devices starts here*/
+@media screen and (min-width:600px) and (max-width:991px){
+
+    /* navbar styling starts here */
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar>uL{
+        margin-top: 1em;
+    }
+    /* navbar styling ends here */
+
+    /* banner section styling starts here*/
+        .banner{
+            gap: 1em;
+        }
+        .banner-title{
+            width: 90%;
+        }
+        .find-input-fields{
+            align-items: center;
+            width: 80%;
+        }
+        .input{
+            width: 100%;
+        }
+    /* banner section styling ends here*/
+    
+    /* winter-offer section styling starts here*/
+    .winter-offer{
+        height: auto;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .winter-offer-image{
+        box-sizing: border-box;
+        padding: 3em;
+    }
+    .winter-offer-title{
+        margin-top: 1em;
+    }
+    /* winter-offer section styling ends here*/
+
+    /* popular-tours section styling starts here*/
+    .popular-tours{
+        height: auto;
+        flex-direction: column;
+        gap: 2em;
+        
+    }
+    /* popular-tours section styling ends here*/
+
+    /* destinations section styling starts here*/
+    .destinations{
+        margin-top: 4em;
+    }
+    
+    .destinations-places{
+            height: auto;
+            grid-template-areas: "maldives"
+            "indonesia"
+            "srilanka"
+            "north-america"
+            "kashmir"
+            "bangladesh"
+            "bandarban"
+            ;
+        }
+    .place{
+        height: 176px;
+        border-radius: 0.5em;
+    }
+    /* destinations section styling ends here */
+
+    /* choose us section styling starts here */
+    .choose-us{
+            margin-top: 4em;
+        }
+    .choose-us-services{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3,1fr);
+        }
+    .service:nth-child(1){
+            grid-row: 1/1;
+            grid-column: 1/2;
+        }
+    .service:nth-child(2){
+            grid-row: 2/2;
+            grid-column: 1/2; 
+        }
+    .service:nth-child(3){
+            grid-row: 3/3;
+            grid-column: 1/2;
+        }
+    /* choose us section styling ends here */
+        
+    /* deals discounts section styling starts here*/
+    .deals-discounts{
+            margin-top: 4em;
+    }
+    .deals-discounts-container{
+            justify-content: center;
+    }
+    .deals-container{
+        padding: 0;
+        justify-content: center;
+    }
+    .deals-container:nth-child(2){
+        padding: 0;
+        justify-content: center;
+    }
+    .deals-data{
+        flex-wrap: wrap;
+        gap: 0.5em;
+    }
+    .deals-discounts-title{
+        margin: 0;
+    }
+    .deals-container-texts{
+        width: 90%;
+        padding: 2em;
+    }
+    .deals-packages{
+        margin-top: 2em;
+        }
+    /* deals discounts section styling ends here*/
+
+    /* simple section styling starts here*/
+        .simple-place{
+            margin-top: 4em;
+            flex-direction: column;
+        }
+        .simple-place-texts{
+            gap: 1em;
+        }
+        .simple-place-title{
+            text-align: center;
+        }
+    /* simple section styling ends here*/
+    
+    /* newsletter section styling starts here*/
+    .newsletter{
+            grid-template-columns: 100%;
+            margin-top: 2em;
+        }
+    .newsletter-form{
+            width: 100%;
+        }
+    .newsletter-image-container{
+            margin-top: 0.5em;
+            height: 400px;
+        }
+    /* newsletter section styling ends here*/
+
+    /* footer part styling starts here*/
+     .footer{
+         margin-top: 4em;
+         height: 300px;
+         gap: 1em;
+        }
+    /* footer part styling starts here*/
+
+
+}
+    /* styling for medium devices ends here*/
