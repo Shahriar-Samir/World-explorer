@@ -232,11 +232,11 @@ body{
 
 /* popular posts section starts here */
 .popular-tours{
+    height: 500px;
     margin-top: 6em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 550px;
     gap: 3.31em;
 }
 
@@ -247,7 +247,7 @@ body{
     justify-content: space-between;
     height: 100%;
     width: 100%;
-    gap: 2em;
+    gap: 1em;
 }
 
 .popular-tours-title{
@@ -657,8 +657,7 @@ body{
      display: flex;
      justify-content: space-between;
      align-items: center;
-     height: 424px;
-     gap: 1.75em;
+     gap: 2em;
 }
 
 .simple-place-title{
@@ -667,7 +666,6 @@ body{
     font-weight: 800;
     font-size: 2.5rem;
     width: 100%;
-    max-height: 448px;
 }
 
 .simple-place-details{
@@ -689,10 +687,10 @@ body{
 }
 
 .simple-place-texts{
-    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 2em;
 }
 
 .see-more{
@@ -711,13 +709,11 @@ body{
 }
 
 .simple-place-video-container{
-    height: 100%;
     width: 100%;
+    position: relative;
 }
 
 .simple-place-video{
-     width: 100%;
-     height: 100%;
      border-radius: 1em;
 }
 
@@ -727,8 +723,10 @@ body{
     text-align: center;
     font-weight: 700;
     color: #FFF;
-
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 /* simple-place section styling ends here */
@@ -739,13 +737,11 @@ body{
     margin-top: 6.25em;
     display: grid;
     grid-template-columns: 45% 55%;
-    height: 500px;
     gap: 1.5em;
 }
 
 .newsletter-form{
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -808,8 +804,6 @@ body{
 }
 
 .newsletter-image-container{
-    height: 100%;
-    max-height: 500px;
     width: 100%;
     background: url('../Images/Rectangle 8 (1).png') no-repeat;
     background-size: cover;
@@ -823,7 +817,8 @@ body{
 .newsletter-discount-container{
     border-radius: 1em;
     background: #FF5400;
-    width: 324px;
+    width: 70%;
+    max-width: 300px;
     height: 120px;
     display: flex;
     flex-direction: column;
@@ -928,6 +923,7 @@ body{
         }
 
         .winter-offer{
+            height: auto;
             flex-direction: column;
             gap: 1em;
         }
@@ -941,10 +937,11 @@ body{
             text-align: start;
         }
         .popular-tours{
+            height: auto;
             flex-direction: column;
-            margin-top: 15em;
+            margin-top: 2em;
             gap: 2em;
-            height: 100%;
+        
         }
         .popular-tours-title{
             font-size: 1.5rem;
@@ -953,9 +950,7 @@ body{
         .popular-tours-image{
                 
         }
-        .destinations-texts{
-            
-        }
+
         .destinations{
          margin-top: 2em;
         }
@@ -963,6 +958,7 @@ body{
             font-size: 1.5rem;
         }
         .destinations-places{
+            height: auto;
             grid-template-areas: "maldives"
             "indonesia"
             "srilanka"
@@ -977,7 +973,7 @@ body{
             border-radius: 0.5em;
         }
         .choose-us{
-            margin-top: 30em;
+            margin-top: 2em;
         }
         .choose-us-title{
             font-size: 1.5rem;
@@ -1027,7 +1023,12 @@ body{
             width: 90%;
             padding: 2em;
         }
+        .deals-packages{
+            margin-top: 2em;
+        }
+
         .simple-place{
+            margin-top: 2em;
             flex-direction: column;
         }
         .simple-place-title{
@@ -1039,30 +1040,30 @@ body{
         .simple-place-list{
             margin-top: 1em;
         }
-        .simple-place-video-title{
-            position: static;
-            justify-self: center;
-            align-self: center;
-          
-        }
         .see-more{
             margin-top: 1em;
         }
         .newsletter{
             grid-template-columns: 100%;
-            margin-top: 25em;
+            margin-top: 2em;
         }
         .newsletter-form{
             width: 100%;
-            height: 500px;
             
         }
         .newsletter-image-container{
-            margin-top: 2em;
-            height: 500px;
+            margin-top: 0.5em;
+            height: 400px;
         }
-
+        .newsletter-link{
+            font-size: 1rem;
+        }
+        .newsletter-discount{
+            font-size: 1.5rem;
+        }
         .footer{
-            margin-top: 40em;
+            margin-top: 2em;
+            height: 300px;
+            gap: 1em;
         }
 }
